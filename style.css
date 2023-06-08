@@ -5,8 +5,13 @@
 
 .navbar{
   width: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.733);
   position: fixed;
+}
+
+
+.nav-link:hover{
+  transform: scale(1.1);
 }
 
 .backgrd-img {
@@ -16,7 +21,7 @@
 }
 
 .backgrd-op{
-  background-color: rgba(0, 0, 0, 0.497);
+  background-color: rgba(0, 0, 0, 0.758);
 }
 
 img {
@@ -48,17 +53,53 @@ input {
 }
 
 .test{
-  box-shadow: 0 0 20px white inset;
+  box-shadow: 0 0 10px white inset;
   border-radius: 20px;
-  overflow-y: auto;
-  height: 50vh;
-  scrollbar-color: blue ;
 }
 
-h1{
+
+.abt-head{
   text-shadow: 0 0 9px wheat;
 }
 
+.event-head{
+  text-shadow: 0 0 4px wheat;
+  box-shadow: 0 0 20px black;
+}
+
+.abt-con, .event-con-1, .event-con-2{
+  font-size: larger;
+}
+
+.event-bg{
+  background: black;
+  min-height: 100vh;
+}
+
+.event-con-2{
+  overflow-y: auto;
+  height: 60vh;
+  border-top: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;
+  border-right: 2px solid violet;
+  border-bottom: 2px solid violet;
+  border-radius: 20px;
+  padding: 10px;
+  overscroll-behavior: contain;
+}
+
+.event-con-2 h3{
+  color: yellow !important;
+  text-decoration: underline;
+}
+
+ul{
+  list-style-position: inside;
+}
+
+.event-con-2::-webkit-scrollbar{
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
     input{
@@ -66,12 +107,24 @@ h1{
     }
 
     .pg-1{
-      height: auto;
+      height: 130vh;
+      top: 0vh;
     }
 
     .navbar{
-      position: sticky !important;
       top: 0;
+      position: sticky;
+      background-color: black;
     }   
+
+    .abt-con, .event-con-1, .event-con-2{
+      font-size: small;
+    }
+
+    .event-con-2{
+      height: 30vh;
+    }
+
+    
 
 }

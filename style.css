@@ -78,7 +78,7 @@ input {
 
 .event-con-2{
   overflow-y: auto;
-  height: 60vh;
+  height: 75vh;
   border-top: 2px solid blueviolet;
   border-left: 2px solid blueviolet;
   border-right: 2px solid violet;
@@ -98,7 +98,12 @@ ul{
 }
 
 .event-con-2::-webkit-scrollbar{
-  display: none;
+  display:none ;
+}
+
+section{
+  border-top: 1px solid white ;
+  border-bottom: 1px solid white ;
 }
 
 @media screen and (max-width: 768px) {
